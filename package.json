@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Kofi611/UMBC_Game_Dev_Forum/issues"
   },
-  "homepage": "https://github.com/Kofi611/UMBC_Game_Dev_Forum#readme"
+  "homepage": "https://github.com/Kofi611/UMBC_Game_Dev_Forum#readme",
+  "dependencies": {
+    "appwrite": "^10.1.0"
+  }
 }
