@@ -1,0 +1,65 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #eee5e5;
+  margin: 0;
+  font-family: calibri;
+  box-sizing: border-box;
+}
+#navBar{
+  position: relative;
+  border: 1px solid black;
+  margin: 0px;
+  overflow: hidden;
+  height: 10%;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+  height: 100%;
+}
+li a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  
+  height: 100%;
+}
+li a:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+#logo{
+  width: 400px;
+  height: 100%;
+  background-size: 400px 100%;
+  background-image: url("logo.png");
+}
+
+button{
+  position: absolute;
+  background-color: #a288e3;
+  width: 15%;
+  top: 10%;
+  height: 80%;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color:#8e6edd;
+}
+
+button:active{
+  background-color: #816CB5;
+}
