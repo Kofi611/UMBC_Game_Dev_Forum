@@ -1,0 +1,22 @@
+{
+  "name": "umbc_game_dev_forum",
+  "version": "1.0.0",
+  "description": "A game dev forum made for HackUMBC 2022",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kofi611/UMBC_Game_Dev_Forum.git"
+  },
+  "keywords": [
+    "forum"
+  ],
+  "author": "404 Brain Not Found",
+  "license": "CC-BY-NC-ND-4.0",
+  "bugs": {
+    "url": "https://github.com/Kofi611/UMBC_Game_Dev_Forum/issues"
+  },
+  "homepage": "https://github.com/Kofi611/UMBC_Game_Dev_Forum#readme"
+}
