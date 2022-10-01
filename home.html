@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -14,14 +15,40 @@
       <li><div id= "logo"></div></li>
       <li><a href="#news">About</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#about">Search</a></li>
-      <button>Log In</button>
-      <button>Sign Up!</button>
+      <li id = "searchElem">
+        <input type = "text" id = "searchbar" placeholder = "Search..." name = "search" class = "search"></input>
+        <button type = "submit" class = "search"><i class="fa fa-search"></i></button>
+      </li>
+      <li>
+        <button id = "login" class = "dataBtn">Log In</button>
+        <button id = "signup" class = "dataBtn">Sign Up!</button>
+      </li>
     </ul>
   </div>
-  
+  <div id = "upperContent">
+    <div>
+      <h1>Let's talk shop</h1>
+      <h3>Start the convo</h3>
+      <p id = "random">Let's have fun</p>
+    </div>
+  </div>
+  <div id = "lowerContent">
+    <h2 style = "text-align: center; font-size: 2em;">Red hot topics:</h2>
+    <div id = "topic1" class = "topic">
+      <header>Game Design</header>
+      <img src = "game-design-logo.jpg"></img>
+    </div>
+    <div id = "topic2" class = "topic">
+      <header>Web Design</header>
+    </div>
+    <div id = "topic3" class = "topic">
+      <header>Cryptocurrency</header>
+    </div>
+    <div id = "topic4" class = "topic">
+      <header>Cybersecurity</header>
+    </div>
+  </div>
   <script src="script.js"></script>
-  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
 </body>
 
 </html>

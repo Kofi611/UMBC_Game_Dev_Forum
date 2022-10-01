@@ -1,8 +1,9 @@
 html, body {
   height: 100%;
   width: 100%;
-  background-color: #eee5e5;
+  background-color: #ddd;
   margin: 0;
+  overflow-x: hidden;
   font-family: calibri;
   box-sizing: border-box;
 }
@@ -32,34 +33,86 @@ li a {
   text-align: center;
   padding: 25px 16px;
   text-decoration: none;
-  
   height: 100%;
+}
+#searchElem{
+  width: 25%;
 }
 li a:hover {
   background-color: #111;
   cursor: pointer;
 }
-
+#searchbar{
+  width: 85%;
+}
 #logo{
   width: 400px;
   height: 100%;
   background-size: 400px 100%;
   background-image: url("logo.png");
 }
-
 button{
-  position: absolute;
-  background-color: #a288e3;
-  width: 15%;
-  top: 10%;
-  height: 80%;
   cursor: pointer;
 }
-
-button:hover{
+.search{
+  height: 40%;
+  margin-top: 5%;
+}
+.dataBtn{
+  position: absolute;
+  background-color: #a288e3;
+  width: 10%;
+  top: 20%;
+  height: 60%;
+  font-size: 1.15em;
+  border-radius: 25px;
+}
+.dataBtn:hover{
   background-color:#8e6edd;
 }
-
-button:active{
+.dataBtn:active{
   background-color: #816CB5;
+}
+#login{
+  right: 17%;
+}
+#signup{
+  right: 5%;
+}
+
+#upperContent, #lowerContent{
+  border: 1px solid black;
+  margin-top: 2%;
+}
+#upperContent{
+  height: 50%;
+  padding: 5%;
+  text-align: center;
+  font-size: 2em;
+}
+
+#random{
+  text-decoration: underline dotted;
+  color: #a288e3;
+  cursor: pointer;
+}
+#lowerContent{
+  height: 85%;
+  margin-bottom: 5%;
+}
+.topic{
+  display: inline;
+  float: left;
+  height: 80%;
+  width: 20%;
+  margin-left: 4%;
+  border: 3px solid black;
+}
+.topic header{
+  border-bottom: 1px solid black;
+  height: 10%;
+}
+img{
+  height: 100%;
+  width: 100%;
 }
