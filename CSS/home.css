@@ -6,7 +6,7 @@ html, body {
   font-family: calibri;
   box-sizing: border-box;
 }
-#navBar{
+#navBar {
   position: relative;
   border: 1px solid black;
   margin: 0px;
@@ -40,14 +40,14 @@ li a:hover {
   cursor: pointer;
 }
 
-#logo{
+#logo {
   width: 400px;
   height: 100%;
   background-size: 400px 100%;
   background-image: url("logo.png");
 }
 
-button{
+button {
   position: absolute;
   background-color: #a288e3;
   width: 15%;
@@ -56,10 +56,10 @@ button{
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color:#8e6edd;
 }
 
-button:active{
+button:active {
   background-color: #816CB5;
 }
