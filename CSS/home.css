@@ -7,7 +7,7 @@ html, body {
   font-family: calibri;
   box-sizing: border-box;
 }
-#navBar{
+#navBar {
   position: relative;
   border: 1px solid black;
   margin: 0px;
@@ -35,30 +35,30 @@ li a {
   text-decoration: none;
   height: 100%;
 }
-#searchElem{
+#searchElem {
   width: 25%;
 }
 li a:hover {
   background-color: #111;
   cursor: pointer;
 }
-#searchbar{
+#searchbar {
   width: 85%;
 }
-#logo{
+#logo {
   width: 400px;
   height: 100%;
   background-size: 400px 100%;
-  background-image: url("logo.png");
+  background-image: url("../Media/Images/logo.png");
 }
-button{
+button {
   cursor: pointer;
 }
-.search{
+.search {
   height: 40%;
   margin-top: 5%;
 }
-.dataBtn{
+.dataBtn {
   position: absolute;
   background-color: #a288e3;
   width: 10%;
@@ -67,52 +67,67 @@ button{
   font-size: 1.15em;
   border-radius: 25px;
 }
-.dataBtn:hover{
+.dataBtn:hover {
   background-color:#8e6edd;
 }
-.dataBtn:active{
+.dataBtn:active {
   background-color: #816CB5;
 }
-#login{
+#login {
   right: 17%;
 }
-#signup{
+#signup {
   right: 5%;
 }
 
-#upperContent, #lowerContent{
-  border: 1px solid black;
+#upperContent, #lowerContent {
   margin-top: 2%;
 }
-#upperContent{
+#upperContent {
   height: 50%;
   padding: 5%;
   text-align: center;
   font-size: 2em;
+  background-color: #888;
 }
 
-#random{
+#random {
   text-decoration: underline dotted;
   color: #a288e3;
   cursor: pointer;
 }
-#lowerContent{
-  height: 85%;
-  margin-bottom: 5%;
+#lowerContent 
+  margin-bottom: 1%;
+  height: 60%;
 }
-.topic{
+.topic {
   display: inline;
   float: left;
-  height: 80%;
+  height: 60%;
   width: 20%;
   margin-left: 4%;
-  border: 3px solid black;
+  cursor: pointer;
 }
-.topic header{
-  border-bottom: 1px solid black;
-  height: 10%;
-}
-img{
-  height: 100%;
+.topic header {
+  border: 2px solid black;
   width: 100%;
+  background-color: #04a96d;
+  color: 423e37;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 1.5em;
+  transition: font-size 0.5s;
+}
+img {
+  height: 0%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.topic:hover img {
+  height: 85%;
+}
+.topic:hover header {
+  font-size: 1.8em;
+  background-color: #a288e3;
 }
