@@ -42,15 +42,11 @@ li a:hover {
   background-color: #111;
   cursor: pointer;
 }
+
 #searchbar {
   width: 85%;
 }
-#logo {
-  width: 400px;
-  height: 100%;
-  background-size: 400px 100%;
-  background-image: url("../Media/Images/logo.png");
-}
+
 button {
   cursor: pointer;
 }
@@ -59,20 +55,20 @@ button {
   margin-top: 5%;
 }
 .dataBtn {
-  position: absolute;
-  background-color: #a288e3;
-  width: 10%;
-  top: 20%;
-  height: 60%;
-  font-size: 1.15em;
-  border-radius: 25px;
-}
+
+
+
 .dataBtn:hover {
   background-color:#8e6edd;
 }
 .dataBtn:active {
-  background-color: #816CB5;
+  background-color: #8e6edd;
 }
+
+button:hover {
+  background-color:#8e6edd;
+}
+
 #login {
   right: 17%;
 }
