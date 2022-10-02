@@ -1,0 +1,42 @@
+#loginContent{
+  color: #423e37;
+  width: 30%;
+  background-color: #a288e3;
+  margin: auto;
+  margin-top: 10%;
+  padding: 2.5%;
+  border-radius: 5px;
+  font-size: 1.15em;
+}
+#loginContent h1{
+  text-align: center;
+  font-size: 2.8em;
+  border-radius: 3px;
+}
+#loginForm{
+  width: 80%;
+  padding: 2.5%;
+  margin: auto;
+  border: 1px solid black;  
+  background-color: #423e37;
+  color: #eee5e5;
+  border-radius: 3px;
+}
+form input{
+  margin-bottom: 10%;
+  margin-left: 5%;
+  width: 60%;
+}
+#subLogin{
+  width: 50%;
+  margin-left: 25%;
+  padding: 2.5%;
+  background-color: #04a96d;
+  color: #423e37;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+#subLogin:hover{
+  background-color: #038757;
+}
