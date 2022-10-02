@@ -1,3 +1,5 @@
-# UMBC_Game_Dev_Forum
+# parseERROR
 
-A forum for game developers at UMBC made for HackUMBC 2022.
+A forum made for HackUMBC 2022.
+
+The goal of this forum, is for game developers to be able to connect and learn as individuals and in communities.
