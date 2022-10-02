@@ -12,14 +12,16 @@ const config = {
     auth0Logout: true,
     secret: 'unhitched-purging-unselect3',
     baseURL: 'http://localhost:9000',
-    clientID: 'dyVdGtwfyzANpYuMEB7Oicntetgvuew8',
-    issuerBaseURL: 'https://dev-6q24x4br.us.auth0.com'
+    clientID: '2hPZvGYK14MYOcpb9szu2u0Wqakgk3JE',
+    issuerBaseURL: 'https://dev-4r311y8d.us.auth0.com'
 };
 
 app.use(auth(config));
+app.use(express.static('HTML'))
 
 app.get('/', (req, res) => {
     res.send(req.oidc.isAuthenticated() ? 'Logged in': 'Logged out');
+    res.redirect('/home.html');
 });
 
 const client = new sdk.Client()
@@ -38,5 +40,41 @@ promise.then(function (response) {
 });
 
 app.listen(9000, () => {
-    console.log('Listening at port 9000')
+    console.log('Listening at Port 9000')
 });
+
+/*
+app.get('/home.html', (req, res) => {
+    fs.readFile('home.html', function(err, data) {
+        if (err) {
+            res.writeHead(404, {'Content-Type': 'text/html'});
+            return res.end("404 Not Found");
+        }
+        res.writeHead(200);
+        res.write(data);
+        return res.end();
+    });
+});
+
+http.createServer(function (req, res) {
+    var p = url.parse(req.url, true);
+    var filename = "." + p.pathname;
+    if (p.pathname == "/") {
+        fs.readFile('home.html', function (err, data) {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(data);
+            return res.end();
+        });
+    } else {
+        fs.readFile(filename, function (err, data) {
+            if (err) {
+                res.writeHead(404, { 'Content-Type': 'text/html' });
+                return res.end("404 Not Foud");
+            }
+            res.writeHead(200, { 'Content-Type': 'text/html' });
+            res.write(data);
+            return res.end();
+        });
+    }
+}).listen(9000);
+*/
