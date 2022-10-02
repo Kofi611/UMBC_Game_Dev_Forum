@@ -1,8 +1,28 @@
 var http = require('http');
 var fs = require('fs');
 var url = require('url');
+const express = require('express');
+const app = express();
 const sdk = require('node-appwrite');
+const { auth } = require('express-openid-connect');
 
+
+const config = {
+    authRequired: false,
+    auth0Logout: true,
+    secret: 'unhitched-purging-unselect3',
+    baseURL: 'http://localhost:9000',
+    clientID: '2hPZvGYK14MYOcpb9szu2u0Wqakgk3JE',
+    issuerBaseURL: 'https://dev-4r311y8d.us.auth0.com'
+};
+
+app.use(auth(config));
+app.use(express.static('HTML'))
+
+app.get('/', (req, res) => {
+    res.send(req.oidc.isAuthenticated() ? 'Logged in': 'Logged out');
+    res.redirect('/home.html');
+});
 
 const client = new sdk.Client()
     .setEndpoint('http://localhost:8000/v1')
@@ -19,24 +39,42 @@ promise.then(function (response) {
     console.log(error);
 });
 
+app.listen(9000, () => {
+    console.log('Listening at Port 9000')
+});
+
+/*
+app.get('/home.html', (req, res) => {
+    fs.readFile('home.html', function(err, data) {
+        if (err) {
+            res.writeHead(404, {'Content-Type': 'text/html'});
+            return res.end("404 Not Found");
+        }
+        res.writeHead(200);
+        res.write(data);
+        return res.end();
+    });
+});
+
 http.createServer(function (req, res) {
     var p = url.parse(req.url, true);
     var filename = "." + p.pathname;
     if (p.pathname == "/") {
-        fs.readFile('home.html', function(err, data) {
-            res.writeHead(200, {'Content-Type': 'text/html'});
+        fs.readFile('home.html', function (err, data) {
+            res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write(data);
             return res.end();
         });
     } else {
-        fs.readFile(filename, function(err, data) {
+        fs.readFile(filename, function (err, data) {
             if (err) {
-                res.writeHead(404, {'Content-Type': 'text/html'});
+                res.writeHead(404, { 'Content-Type': 'text/html' });
                 return res.end("404 Not Foud");
             }
-            res.writeHead(200, {'Content-Type': 'text/html'});
+            res.writeHead(200, { 'Content-Type': 'text/html' });
             res.write(data);
             return res.end();
         });
     }
 }).listen(9000);
+*/

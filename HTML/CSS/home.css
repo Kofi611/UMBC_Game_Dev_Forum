@@ -1,0 +1,129 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #ddd;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: calibri;
+  box-sizing: border-box;
+}
+#navBar {
+  position: relative;
+  border: 1px solid black;
+  margin: 0px;
+  overflow: hidden;
+  height: 10%;
+  width: 100%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: #333;
+}
+li {
+  float: left;
+  height: 100%;
+}
+li a {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 25px 16px;
+  text-decoration: none;
+  height: 100%;
+}
+#searchElem {
+  width: 25%;
+}
+li a:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+#searchbar {
+  width: 85%;
+}
+
+button {
+  cursor: pointer;
+}
+.search {
+  height: 40%;
+  margin-top: 5%;
+}
+.dataBtn {
+
+}
+
+.dataBtn:hover {
+  background-color:#8e6edd;
+}
+.dataBtn:active {
+  background-color: #8e6edd;
+}
+
+button:hover {
+  background-color:#8e6edd;
+}
+
+#login {
+  right: 17%;
+}
+#signup {
+  right: 5%;
+}
+
+#upperContent, #lowerContent {
+  margin-top: 2%;
+}
+#upperContent {
+  height: 50%;
+  padding: 5%;
+  text-align: center;
+  font-size: 2em;
+  background-color: #888;
+}
+
+#random {
+  text-decoration: underline dotted;
+  color: #a288e3;
+  cursor: pointer;
+}
+#lowerContent {
+  margin-bottom: 1%;
+  height: 60%;
+}
+.topic {
+  display: inline;
+  float: left;
+  height: 60%;
+  width: 20%;
+  margin-left: 4%;
+  cursor: pointer;
+}
+.topic header {
+  border: 2px solid black;
+  width: 100%;
+  background-color: #04a96d;
+  color: 423e37;
+  text-align: center;
+  vertical-align: text-bottom;
+  font-size: 1.5em;
+  transition: font-size 0.5s;
+}
+img {
+  height: 0%;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.topic:hover img {
+  height: 85%;
+}
+.topic:hover header {
+  font-size: 1.8em;
+  background-color: #a288e3;
+}
