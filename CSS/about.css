@@ -1,0 +1,53 @@
+#mission{
+  position: absolute;
+  width: 100%;
+  top: 15%;
+  overflow: hidden;
+  height: 80%;
+}
+#missionImg{
+  position: absolute;
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  height: 100%;
+  width: 50%;
+  border-radius: 0px 0px 40%;
+}
+#missionText{
+  position: absolute;
+  right: 5%;
+  margin: auto;
+  border: 1px solid black;
+  width: 40%;
+  font-size: 1.3em;
+  text-align: center;
+  background-color: #555;
+  color: #eee5e5;
+}
+#missionText h1{
+  font-family: Georgia, serif;
+  color: #a288e3;
+}
+
+#values{
+  position:absolute;
+  top: 100%;
+  padding: 0px;
+  padding-bottom: 10%;
+  width: 100%;
+  margin-top: 5%;
+}
+.valueContainer{
+  margin-top: 3%;
+  float: left;
+  width: 25%;
+  margin-left: 6.25%;
+}
+.value{
+  display: inline;
+}
+#valueHead{
+  padding: 5px;
+  width: 33%;
+  margin: auto;
+}
