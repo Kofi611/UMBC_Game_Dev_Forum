@@ -4,14 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Parse Error -- Our Mission</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.png">
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/contact.css" rel="stylesheet" type="text/css" />
+  <title>Parse Error -- Game Design Forum</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/thread.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/6258c12eb7.js" crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
 </head>
-
 <body>
   <div id = "navBar">
     <ul>
@@ -29,11 +28,17 @@
     </ul>
   </div>
 
-  <p></p><div id = "support">
-    <div id = "supportText">
-      <h1>Contact Information</h1>
-      <h4>Incase of error or questions, please contact us at parseERRORhelp@gmail.com</h4>
+  <div id = "threadContainer">
+    <div id = "threadHead" class = "threadContent">
+      <h1 id = "threadTitle">Thread Title</h1>
+      <p id = "threadContent">Thread content...</p>
+      <footer id = "threadFooter">Likes Dislikes Comments</footer>
     </div>
-  </div> </p>
+    <div id = "comments" class = "threadContent"> 
+
+    </div>
+    <textarea placeholder = "Share your thoughs" id = "userComment" class = "threadContent" rows="10" cols="100"></textarea>
+    <button id = "postBtn" onclick = "post();">Post</button>
+  </div>
 </body>
 </html>

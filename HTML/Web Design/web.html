@@ -4,14 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Parse Error -- Our Mission</title>
-  <link rel="icon" type="image/x-icon" href="/favicon.png">
-  <link href="CSS/style.css" rel="stylesheet" type="text/css" />
-  <link href="CSS/contact.css" rel="stylesheet" type="text/css" />
+  <title>Parse Error -- Game Design Forum</title>
+  <link href="../../../style.css" rel="stylesheet" type="text/css" />
+  <link href="../../../CSS/forum.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://kit.fontawesome.com/6258c12eb7.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <div id = "navBar">
     <ul>
@@ -29,11 +27,21 @@
     </ul>
   </div>
 
-  <p></p><div id = "support">
-    <div id = "supportText">
-      <h1>Contact Information</h1>
-      <h4>Incase of error or questions, please contact us at parseERRORhelp@gmail.com</h4>
+  <div id = "forumContainer">
+    <aside id = "recommended" class = "forumContent">
+      <h3>Recommended Forums:</h3>
+      <ul id = "forumRecs">
+        <li id = "rec1" class = "recForum"><a href = "#../Game Design/game-design.html">Game Design</a></li>
+        <li id = "rec1" class = "recForum"><a href = "#../Cryptocurrency/cryptocurrency.html">Cryptocurrency</a></li>
+        <li id = "rec1" class = "recForum"><a href = "#../Cybersecurity/cybersecurity.html">Cybersecurity</a></li>
+      </ul>
+    </aside>
+    <div id = "forumFeed" class = "forumContent" onclick = "window.location.href = 'HTML/Forums/Game Design/thread0.html';">
+      <h1>Conversations on Game Design</h1>
+        <div id = "threadFeed">
+          feed to be filled with posts!
+        </div>
     </div>
-  </div> </p>
+  </div>
 </body>
 </html>

@@ -7,7 +7,7 @@
   <title>Parse Error -- Talk, Learn, and Grow</title>
   <link rel="icon" type="image/x-icon" href="/favicon.png">
   <link href="../style.css" rel="stylesheet" type="text/css" />
-  <link href="../CSS/login.css" rel="stylesheet" type="text/css" />
+  <link href="../CSS/signup.css" rel="stylesheet" type="text/css" />
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -27,16 +27,22 @@
     </ul>
   </div>
     
-  <div id = "loginContent">
-    <h1>Log In</h1>
-      <form id = "loginForm" onsubmit="return validateLogin();">
+  <div id = "signupContent">
+    <h1>Sign Up</h1>
+      <form id = "signupForm" name = "loginForm">
         <label for="username">Username:</label><br>
-        <input type = "text" name = "username" placeholder = "codingbeast223"></input>
+        <input type = "text" required name = "username" placeholder = "codingbeast223"></input>
+        <p>- Password must have at least 8 characters</p>
+        <p>- Password must include at least one special character and number</p>
         <br>
         <label for="password">Password:</label><br>
-        <input type = "password" name = "password"></input>
+        <input type = "password" id = "password" required name = "password" pattern = "^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$" placeholder = "password123"></input>
         <br>
-        <input type = "submit" id = "subLogin" name = "subLogin" value = "Log in"></input>
+        <br>
+        <label for="password">Confirm your password:</label><br>
+        <input type = "password" id = "confirm_password" required name = "password" pattern = "^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=]).*$" placeholder = "password123"></input>
+        <br>
+        <input type = "submit" id = "subSignup" name = "subSignup" value = "Sign up"></input>
       </form>
    </div>
   </body>
