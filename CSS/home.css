@@ -56,7 +56,7 @@ button {
 }
 .dataBtn {
 
-
+}
 
 .dataBtn:hover {
   background-color:#8e6edd;
@@ -92,7 +92,7 @@ button:hover {
   color: #a288e3;
   cursor: pointer;
 }
-#lowerContent 
+#lowerContent {
   margin-bottom: 1%;
   height: 60%;
 }
