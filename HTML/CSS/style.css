@@ -51,7 +51,7 @@ li a:hover {
   width: 400px;
   height: 100%;
   background-size: 100% 50%;
-  background-image: url("logo.png");
+  background-image: url("Images\\logo.png");
 }
 button{
   cursor: pointer;
